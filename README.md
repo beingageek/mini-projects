@@ -7,3 +7,4 @@ This repository contains small projects in various programming languages coverin
 Click on each of the following to read detailed description for each projects.
 
 * Camera Files Sorter - Python project to organize digital camera files by year, month and date
+* Credit Cards Compare - HTML and JavaScript project to compare credit card benefits
