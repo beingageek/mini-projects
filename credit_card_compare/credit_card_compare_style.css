@@ -1,0 +1,16 @@
+.pure-menu-item {
+    height: auto;
+    padding-right: 20px;
+}
+.pure-menu-horizontal {
+    padding-top: 10px;
+}
+.results {
+    padding-left: 20px;
+}
+#spending_form {
+    display: none;
+}
+.forms {
+    padding-left: 20px;
+}

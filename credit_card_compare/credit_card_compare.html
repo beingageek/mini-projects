@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTF-8"
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="credit_card_compare_script.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" 
+            integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="credit_card_compare_style.css">
+    </head>
+    <body>
+        <div class="pure-menu pure-menu-horizontal">
+            <a href="#" class="pure-menu-heading pure-menu-link">ACTIONS</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">                    
+                    <button class="pure-button" type="button" onclick="openSpendingForm()">
+                        <i class="fas fa-dollar-sign"></i>
+                        Set Annual Spending Amounts
+                    </button>
+                    <button class="pure-button" type="button" onclick="addCards()">
+                            <i class="fas fa-credit-card"></i>
+                            Add Pre-Defined Cards
+                    </button>
+                </li>
+                <li class="pure-menu-item">
+                    <div class="pure-button-group" role="group" aria-label="...">
+                        <button class="pure-button" type="button" onclick="printCardList()" >
+                            <i class="fas fa-list-ul"></i>
+                            Show Card List
+                        </button>
+                        <button class="pure-button" type="button" onclick="clearCardListOutput()" >
+                            <i class="fas fa-eraser"></i>
+                            Hide Card List
+                        </button>
+                    </div>  
+                </li>
+                <li class="pure-menu-item">
+                    <div class="pure-button-group" role="group" aria-label="...">
+                        <button class="pure-button" type="button" onclick="printCardBenefits()">
+                            <i class="fas fa-calculator"></i>
+                            Print Card Benefits
+                        </button>
+                        <button class="pure-button" type="button" onclick="clearCardBenefitOutput()">
+                            <i class="fas fa-eraser"></i>
+                            Hide Card Benefits
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="forms">
+            <div id="spending_form" class="pure-form">
+                Set Annual Spending Amounts:
+                <input type="text" name="travel" placeholder="Travel" />
+                <input type="text" name="dining" placeholder="Dining" />
+                <input type="text" name="gas" placeholder="Gas" />
+                <input type="text" name="groceries" placeholder="Groceries" />
+                <input type="text" name="others" placeholder="Others" />
+                <br>
+                <button class="pure-button" type="button" onclick="updateSpending()">
+                    Update
+                </button>
+            </div>                    
+        </div>
+        <div class="results">
+            <div id="card_list"></div>
+            <div id="card_benefits"></div>
+        </div>
+    </body>
+</html>
