@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Surprise Me!</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/4.1.5/cash.min.js"></script>
+        <script src="spinner.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" 
+            integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Sulphur+Point&display=swap" rel="stylesheet"> 
+        <link href="spinner.css" rel="stylesheet">
+        <script>
+            $(function () {
+                showMembers();
+                hideWheel();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="item_listing">
+            <span class="list_header_class">List Of Items</span>
+            <div class="pure-button-group" role="group" id="item_listing_div">
+            </div>
+        </div>
+        <div id="edit_div">
+            <br>
+            <button class="pure-button button_spin" id="edit_items">Edit Items</button>
+        </div>
+        <div id="edit_items_form" class="pure-form">
+            Enter Items: <input type="text" id="items_input" placeholder="Item1, Item2, Item3, Item4" />
+            <button class="pure-button" type="button" id="update_items_list">Update</button>
+        </div>
+        <div id="spin_div">
+            <button class="pure-button button_spin" id="spin_now">SPIN</button>
+        </div>
+        <div id="container">
+            <div class="circle1">
+            </div>
+            <div class="circle2">
+            </div>
+            <div class="circle3">
+            </div>
+        </div>
+        <div id="result_div"><span id="result_name"></span></div>
+    </body>
+</html>
